@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    /* display: flex; */
+    
+}
+
+.contain{
+   display: flex;
+   /* justify-content: center;
+   align-items: center; */
+   padding: 50;
+   /* padding-left: 40; */
+}
+
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 5;
+}
+
+
+.head{
+  font-size: 20;
+  padding-left: 30;
+  color: black;
+  flex-direction: row;
+  flex: 3;
+  /* background-color: burlywood; */
+  flex-direction: column;
+}
+
+.ro{
+     background-color: #131C25;
+    
+    height: 100vh;
+}
+
+.ghost{
+    font-size: 30;
+}
+
+/* .iconHeader{
+    padding: 40;
+    padding-top: 30;
+} */
+
+.side{
+    color: aliceblue;
+    border-width: 1;
+    /* border-bottom-color: yellow; */
+
+}
+
+.siderr{
+    background-color: #263143;
+    height: 100vh;
+    color: white;
+}
+
+.heartIcon{
+    padding-left: 40;
+}
+
+.yh{
+    background-color: #0D181E;
+}
