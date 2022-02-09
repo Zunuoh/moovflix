@@ -1,0 +1,41 @@
+body{
+  overflow: hidden;
+}
+
+.sideScreenContainer{
+  padding: 30px;
+  background-color: #098193;
+  height: 100vh;
+}
+
+.siteTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.movieCategories{
+  margin-top: 20px;
+}
+
+.browserText{
+  margin-top: 10px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.sideScreenHeaders{
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bcc3cf;
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .sideScreenContainer{
+    padding: 30px;
+    height: 100vh;
+  }
+}

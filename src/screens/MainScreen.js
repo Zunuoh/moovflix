@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MainScreen = () => {
-  return (
+const MainScreen = () => {    
+return (
     <div>MainScreen</div>
   )
 }
 
-export default MainScreen
+export default MainScreen;
