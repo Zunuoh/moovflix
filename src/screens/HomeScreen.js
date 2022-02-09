@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col} from 'react-bootstrap'
 import SideScreen from './SideScreen'
-// import MainScreen from './MainScreen'
+import MainScreen from './MainScreen'
 
 
 const HomeScreen = () => {
@@ -12,7 +12,7 @@ const HomeScreen = () => {
                 <SideScreen/>
             </Col>
             <Col sm={8}>
-                sm=4
+                <MainScreen/>
             </Col>
         </Row>
     </div>

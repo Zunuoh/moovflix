@@ -7,8 +7,8 @@ const categoryList = [{id:"0", name:"Kuwait TV"}, {id:"1", name:"Free Shows"}, {
 
 
 const SideScreen = () => {
-    const [browsers, setBrowser] = useState(browseList);
-    const [categories, setCategories] = useState(categoryList);
+    const [browsers] = useState(browseList);
+    const [categories] = useState(categoryList);
   return (
     <div className = 'sideScreenContainer'>
 

@@ -32,10 +32,21 @@ body{
   color: #bcc3cf;
 }
 
+.mainScreenContainer{
+  padding: 40px;
+}
+
 @media screen and (max-width: 1000px) {
   
   .sideScreenContainer{
     padding: 30px;
     height: 100vh;
+  }
+
+  .sideScreenHeaders{
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #bcc3cf;
   }
 }
