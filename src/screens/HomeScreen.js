@@ -8,10 +8,10 @@ const HomeScreen = () => {
   return (
     <div>
         <Row>
-            <Col sm={2}>
+            <Col sm={2} style={{backgroundColor:"#098193"}}>
                 <SideScreen/>
             </Col>
-            <Col sm={8}>
+            <Col sm={10}>
                 <MainScreen/>
             </Col>
         </Row>

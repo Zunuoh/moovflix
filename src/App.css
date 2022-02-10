@@ -1,11 +1,12 @@
 body{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .sideScreenContainer{
   padding: 30px;
-  background-color: #098193;
-  height: 100vh;
+  /* background-color: #098193; */
+  min-height: 100vh;
 }
 
 .siteTitle{
