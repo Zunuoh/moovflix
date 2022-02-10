@@ -22,9 +22,9 @@ const HeaderScreen = () => {
     <div ></div>
     </div>
     <div style={{marginLeft:20}}>
-    <div>Lucinda McCarthhy</div>
+    <div>Lucinda McCarthy</div>
     <Link to="/profile">
-        <div style={{fontSize:15}}>Manage Account</div>
+        <div style={{fontSize:15, cursor:"pointer"}}>Manage Account</div>
     </Link>
     </div>
     
