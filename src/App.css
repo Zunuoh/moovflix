@@ -37,6 +37,14 @@ body{
   padding: 40px;
 }
 
+.leftHeader{
+  flex:15
+}
+
+.rightHeader{
+  flex:1
+}
+
 @media screen and (max-width: 1000px) {
   
   .sideScreenContainer{
@@ -50,4 +58,13 @@ body{
     font-weight: bold;
     color: #bcc3cf;
   }
+
+  .leftHeader{
+    flex:10
+  }
+  
+  .rightHeader{
+    flex:2
+  }
+  
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderScreen from './HeaderScreen';
-import cartoon from '../assets/cartoon2.png';
+import cartoon from '../../assets/cartoon2.png';
 // import axios from 'axios';
 import {Card} from 'react-bootstrap';
 
@@ -18,8 +18,8 @@ return (
         Recommended for you
       </div>
 
-      <div style={{display:"flex", flexWrap:"wrap", marginTop:10}}>
-      <Card style={{ width: '18rem' }}>
+      <div style={{display:"flex", flexWrap:"wrap", }}>
+      <Card style={{ width: '18rem', marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -31,7 +31,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -43,7 +43,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -55,7 +55,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -75,7 +75,7 @@ return (
       </div>
 
       <div style={{display:"flex", flexWrap:"wrap", marginTop:10}}>
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem'}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -99,7 +99,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -111,7 +111,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>

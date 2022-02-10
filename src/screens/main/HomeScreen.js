@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col} from 'react-bootstrap'
-import SideScreen from './SideScreen'
-import MainScreen from './MainScreen'
+import SideScreen from '../main/SideScreen'
+import MainScreen from '../main/MainScreen'
 
 
 const HomeScreen = () => {
