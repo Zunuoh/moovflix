@@ -19,7 +19,7 @@ return (
       </div>
 
       <div style={{display:"flex", flexWrap:"wrap", }}>
-      <Card style={{ width: '18rem', marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -31,7 +31,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -43,7 +43,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -55,7 +55,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -75,7 +75,7 @@ return (
       </div>
 
       <div style={{display:"flex", flexWrap:"wrap", marginTop:10}}>
-      <Card style={{ width: '18rem'}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -87,7 +87,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -99,7 +99,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
@@ -111,7 +111,7 @@ return (
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '18rem', marginLeft:20, marginTop:10}}>
+      <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
