@@ -6,7 +6,7 @@ import { Home } from 'react-feather';
 import profileImage from '../../assets/zu.jpeg';
 
 const ManageProfile = () => {
-  return (
+    return (
     <div>
     <Row>
         <Col sm={2} style={{backgroundColor:"#098193"}}>
@@ -21,7 +21,7 @@ const ManageProfile = () => {
         </div>
         <div  style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", marginTop:-60}}>
                 <div className='profileImage'>
-                <img src={profileImage} style={{width:100, height:100, borderRadius:80}}/>
+                <img src={profileImage} style={{width:100, height:100, borderRadius:80}} alt=''/>
                 </div>
 
             <div>

@@ -21,7 +21,7 @@ const HeaderScreen = () => {
     <div style={{display:"flex", marginTop:5, marginLeft:50}}>
     <div style={{background:"red", width:60, height:60, borderRadius:30}}>
     <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-      <img src={profileImage} style={{width:60, height:60, borderRadius:30}}/>
+      <img src={profileImage} style={{width:60, height:60, borderRadius:30}} alt=''/>
     </div>
     </div>
     <div style={{marginLeft:20}}>
