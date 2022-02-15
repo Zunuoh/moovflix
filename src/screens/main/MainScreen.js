@@ -4,6 +4,7 @@ import { PlusCircle } from 'react-feather';
 import {Card} from 'react-bootstrap';
 import { Tooltip, IconButton, Rating } from '@mui/material';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 // const api = axios.create({
 //   baseURL : `https://movie-database-imdb-alternative.p.rapidapi.com/`
@@ -44,7 +45,7 @@ return (
           </div>
           <Card.Body>
             {/* <Card.Title >kjlk</Card.Title> */}
-            <Card.Title style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:2}}>{film.original_title}</Card.Title>
+            <Card.Title style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:2}}>{film.title}</Card.Title>
             <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
             <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
             </div>
@@ -53,9 +54,11 @@ return (
             </Card.Text>
             <div style={{display:"flex",justifyContent:"flex-end"}}>
             <Tooltip title="View more">
+              <Link to='/moredetails'>
               <IconButton>
                 <PlusCircle/>
               </IconButton>
+              </Link>
             </Tooltip>
               
             </div>

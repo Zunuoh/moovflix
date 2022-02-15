@@ -96,7 +96,31 @@ body{
 }
 
 .moreDetailsImageContainer{
+  width: 450px;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 
+.moreDetailsImage{
+  width: 450px;
+  height: 490px;
+}
+
+.moreDetailsInformationContainer{
+  margin-top: 20px;
+}
+
+.movieDetailsDescription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: aqua; */
+  max-width: 80ch;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -123,5 +147,34 @@ body{
   .rightHeader{
     flex:3
   }
+
+  .moreDetailsImageContainer{
+    width: 150px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .moreDetailsImage{
+    width: 150px;
+    height: 290px;
+  }
+
+
+.moreDetailsInformationContainer{
+  margin-top: 50px;
+}
+
+.movieDetailsDescription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* background-color: aqua; */
+  max-width: 80ch;
+
+}
   
 }
