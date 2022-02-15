@@ -42,7 +42,7 @@ const ManageProfile = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className='formText'>Email</Form.Label>
                     <Form.Control type="email" />
-                    <Form.Text className="text-muted" className='formText'>
+                    <Form.Text className="text-muted formText" >
                         We'll never share your email with anyone else.
                         </Form.Text>
                 </Form.Group>

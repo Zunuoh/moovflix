@@ -61,9 +61,13 @@ body{
   height: 33rem;
   margin-left:40px;
   margin-top:30px;
-  /* box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); */
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   padding: 20px;
+}
+
+.cardContainer:hover{
+  width: 19rem;
+  height: 35rem;
 }
 
 .elip{
@@ -90,6 +94,15 @@ body{
 .formText{
   font-family: 'Montserrat', sans-serif;
 }
+
+.moreDetailsImageContainer{
+
+}
+
+
+
+
+
 @media screen and (max-width: 1000px) {
   .sideScreenContainer{
     padding: 10px;

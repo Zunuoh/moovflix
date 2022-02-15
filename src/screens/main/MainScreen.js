@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import HeaderScreen from './HeaderScreen';
-import cartoon from '../../assets/cartoon2.png';
 import { PlusCircle } from 'react-feather';
 import {Card} from 'react-bootstrap';
 import { Tooltip, IconButton, Rating } from '@mui/material';
@@ -17,7 +16,7 @@ const MainScreen = () => {
   const getFilms = async() =>{
     const response = await axios("https://ghibliapi.herokuapp.com/films", {
           params: {
-            _limit: 3
+            _limit: 9
            }
         })
     setFilms(response.data)
@@ -41,7 +40,7 @@ return (
             MOVIE RECOMMENDATION
           </Card.Text>
           <div className='cardImageContainer'>
-          <Card.Img variant="top" src={cartoon} style={{width:250, height:270}}/>
+          <Card.Img variant="top" src={film.image} style={{width:250, height:270}}/>
           </div>
           <Card.Body>
             {/* <Card.Title >kjlk</Card.Title> */}
