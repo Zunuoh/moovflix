@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderScreen from './HeaderScreen';
 import cartoon from '../../assets/cartoon2.png';
-// import axios from 'axios';
+import { PlusCircle } from 'react-feather';
 import {Card} from 'react-bootstrap';
-import  Axios  from 'axios';
+import { Tooltip, IconButton, Rating } from '@mui/material';
+import axios from 'axios';
 
 // const api = axios.create({
 //   baseURL : `https://movie-database-imdb-alternative.p.rapidapi.com/`
@@ -12,78 +13,69 @@ import  Axios  from 'axios';
 const MainScreen = () => {   
   const [films, setFilms] = useState("");
   // const [loading, setLoading] = useState(false)
-  const getFilms = () => {
-    Axios.get("https://ghibliapi.herokuapp.com/films", {
-      params: {
-        _limit: 10
-       }
-    }).then(
-      (response) => {
-        console.log(response)
-        setFilms(response.data)
-      }
-    )
+
+  const getFilms = async() =>{
+    const response = await axios("https://ghibliapi.herokuapp.com/films", {
+          params: {
+            _limit: 8
+           }
+        })
+    setFilms(response.data)
   }
+  useEffect(()=>{
+    getFilms();
+  }, []);
 
 return (
     <div>
        <HeaderScreen/>
        <div className='mainScreenContainer'>
-      <div style={{marginTop:10, fontWeight:"bold"}}>
+      <div style={{marginTop:2, fontWeight:"bold"}}>
         Recommended for you
       </div>
-      <button onClick={getFilms}>get film</button>
-
+      <div style={{display:"flex", flexWrap:"wrap", }}>
       {films && films.map(film =>{
         return(
-          <div>{film.name}okayyy</div>
+          <Card className='cardContainer'>
+          <Card.Text style={{display:"flex", justifyContent:"center", alignItems:"center", fontWeight:"bold"}}>
+            MOVIE RECOMMENDATION
+          </Card.Text>
+          <div className='cardImageContainer'>
+          <Card.Img variant="top" src={cartoon} style={{width:250, height:270}}/>
+          </div>
+          <Card.Body>
+            {/* <Card.Title >kjlk</Card.Title> */}
+            <Card.Title style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:2}}>{film.original_title}</Card.Title>
+            <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+            </div>
+            <Card.Text className='elip'>
+           {film.description}
+            </Card.Text>
+            <div style={{display:"flex",justifyContent:"flex-end"}}>
+            <Tooltip title="View more">
+              <IconButton>
+                <PlusCircle/>
+              </IconButton>
+            </Tooltip>
+              
+            </div>
+          </Card.Body>
+        </Card>
+        
         )
       })}
-      <div style={{display:"flex", flexWrap:"wrap", }}>
-      <Card className='cardContainer'>
-        <Card.Img variant="top" src={cartoon} />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-          </Card.Text>
-          <Card.Link href='#'>Go somewhere</Card.Link>
-        </Card.Body>
-      </Card>
-
-      <Card className='cardContainer'>
-        <Card.Img variant="top" src={cartoon} />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-          </Card.Text>
-          <Card.Link href='#'>Go somewhere</Card.Link>
-        </Card.Body>
-      </Card>
-
-      <Card className='cardContainer'>
-        <Card.Img variant="top" src={cartoon} />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-          </Card.Text>
-          <Card.Link href='#'>Go somewhere</Card.Link>
-        </Card.Body>
-      </Card>
-
-     
       </div>
 
-      <div style={{marginTop:40, fontWeight:"bold"}}>
+      
+
+
+
+      {/* <div style={{marginTop:40, fontWeight:"bold"}}>
         Only on Telly
-      </div>
+      </div> */}
 
-      <div style={{display:"flex", flexWrap:"wrap", marginTop:10}}>
+      {/* <div style={{display:"flex", flexWrap:"wrap", marginTop:10}}>
       <Card className='cardContainer'>
         <Card.Img variant="top" src={cartoon} />
         <Card.Body>
@@ -131,7 +123,7 @@ return (
           <Card.Link href='#'>Go somewhere</Card.Link>
         </Card.Body>
       </Card>
-      </div>
+      </div> */}
 
       <div>
      
