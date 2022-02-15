@@ -24,10 +24,11 @@ body{
   margin-top: 10px;
   color: aliceblue;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sideScreenHeaders{
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
   color: #bcc3cf;
@@ -85,6 +86,10 @@ body{
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
+
+.formText{
+  font-family: 'Montserrat', sans-serif;
+}
 @media screen and (max-width: 1000px) {
   .sideScreenContainer{
     padding: 10px;
@@ -92,18 +97,18 @@ body{
   }
 
   .sideScreenHeaders{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
     color: #bcc3cf;
   }
 
   .leftHeader{
-    flex:10
+    flex:9
   }
   
   .rightHeader{
-    flex:2
+    flex:3
   }
   
 }

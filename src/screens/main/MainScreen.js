@@ -17,7 +17,7 @@ const MainScreen = () => {
   const getFilms = async() =>{
     const response = await axios("https://ghibliapi.herokuapp.com/films", {
           params: {
-            _limit: 8
+            _limit: 3
            }
         })
     setFilms(response.data)
@@ -30,14 +30,14 @@ return (
     <div>
        <HeaderScreen/>
        <div className='mainScreenContainer'>
-      <div style={{marginTop:2, fontWeight:"bold"}}>
+      <div style={{marginTop:2, fontWeight:"bold",  fontFamily: 'Montserrat, sans-serif'}}>
         Recommended for you
       </div>
       <div style={{display:"flex", flexWrap:"wrap", }}>
       {films && films.map(film =>{
         return(
           <Card className='cardContainer'>
-          <Card.Text style={{display:"flex", justifyContent:"center", alignItems:"center", fontWeight:"bold"}}>
+          <Card.Text style={{display:"flex", justifyContent:"center", alignItems:"center", fontWeight:"bold", fontFamily: 'Montserrat, sans-serif', fontSize:15}}>
             MOVIE RECOMMENDATION
           </Card.Text>
           <div className='cardImageContainer'>

@@ -24,10 +24,10 @@ const HeaderScreen = () => {
       <img src={profileImage} style={{width:60, height:60, borderRadius:30}} alt=''/>
     </div>
     </div>
-    <div style={{marginLeft:20}}>
-    <div>Lucinda McCarthy</div>
+    <div style={{marginLeft:18}}>
+    <div style={{ fontFamily: 'Montserrat, sans-serif'}}>Lucinda McCarthy</div>
     <Link to="/profile" style={{textDecoration:"none"}}>
-        <div style={{fontSize:15, cursor:"pointer", color:"#098193"}}>Manage Account</div>
+        <div style={{fontSize:15, cursor:"pointer", color:"#098193", fontFamily: 'Montserrat, sans-serif'}}>Manage Account</div>
     </Link>
     </div>
     
