@@ -22,8 +22,12 @@ const MoreDetailsScreen = () => {
     }, [])
   return (
     <div style={{padding:20, overflowY:"hidden"}}>
-    <Link to="/">
+          {/* <h1 style={{color:"blue", fontFamily: 'Redressed, cursive'}}>Telly</h1> */}
+    <Link to="/" style={{textDecoration:"none"}}>
+    <div>
     <ArrowLeft/>
+    Back
+    </div>
     </Link>
     <Row>
     <Col sm={4}>

@@ -101,7 +101,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 5px; */
 }
 
 .moreDetailsImage{
@@ -110,7 +110,7 @@ body{
 }
 
 .moreDetailsInformationContainer{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .movieDetailsDescription{
