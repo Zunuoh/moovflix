@@ -1,13 +1,21 @@
-import React, {useState, useEffect} from 'react';
-import {Row, Col} from 'react-bootstrap';
+import React, {useState, useEffect } from 'react';
+import {Row, Col, Spinner} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {Rating} from '@mui/material';
 import { ArrowLeft } from 'react-feather';
 import cartoon from '../../assets/cartoon2.png';
+import { useQueryParams } from '../../hooks';
 import axios from 'axios'
 
-const MoreDetailsScreen = () => {
+const MoreDetailsScreen = (props) => {
+    let query = useQueryParams();
     const [filmDetails, setFilmDetails] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [film, setFilm] = useState({});
+
+    const getFilmById = () => {
+        // TODO: implement me now or never 
+    }
 
     const getFilmDetails = async() => {
         const response = await axios("https://ghibliapi.herokuapp.com/films", {
@@ -16,13 +24,17 @@ const MoreDetailsScreen = () => {
             }
         })
     setFilmDetails(response.data)
+    setLoading(true)
     }
     useEffect(()=>{
+        const filmId = query.get('id');
+        // alert(filmId);
+        // Get film by filmId
+        setFilm(getFilmById(filmId));
         getFilmDetails();
     }, [])
   return (
     <div style={{padding:20, overflowY:"hidden"}}>
-          {/* <h1 style={{color:"blue", fontFamily: 'Redressed, cursive'}}>Telly</h1> */}
     <Link to="/" style={{textDecoration:"none"}}>
     <div>
     <ArrowLeft/>
@@ -39,10 +51,11 @@ const MoreDetailsScreen = () => {
     </Col>
     <Col sm={8}>
         <div style={{minHeight:"100vh", display:"flex", justifyContent:"center"}}>
+            
              <div  className='moreDetailsInformationContainer'>
                {filmDetails && filmDetails.map(filmDetail =>{
                 return(
-                <div >
+                 <div >
                 <div style={{fontSize:20}}>
                         {filmDetail.title}
                 </div>
@@ -66,6 +79,8 @@ const MoreDetailsScreen = () => {
                 </div>
 
                 </div>
+               
+              
                    )
                })}
             </div>

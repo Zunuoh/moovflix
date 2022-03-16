@@ -91,6 +91,11 @@ body{
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
+.imageContainer{
+  width: 250px;
+  height: 270px;
+}
+
 .formText{
   font-family: 'Montserrat', sans-serif;
 }
@@ -176,5 +181,32 @@ body{
   max-width: 80ch;
 
 }
-  
+
+.cardContainer{
+  width: 14rem;
+  height: 33rem;
+  margin-left:20px;
+  margin-top:30px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 20px;
+}
+
+/* .cardContainer:hover{
+  width: 15rem;
+  height: 32rem;
+} */
+
+.cardImageContainer{
+  width: 160px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* .tooltipContainer{
+  margin-bottom: 5px;
+} */
 }

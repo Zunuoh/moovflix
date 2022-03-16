@@ -1,14 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
-const profileList = [{id:"0", "name":""}]
+const profileList = [{ id: "0", name: "" }];
 
 const ProfileLinks = () => {
-  return (
-    <div>
-        
+  return <div></div>;
+};
 
-    </div>
-  )
-}
-
-export default ProfileLinks
+export default ProfileLinks;
