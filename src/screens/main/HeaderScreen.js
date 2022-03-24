@@ -2,6 +2,7 @@ import React from "react";
 import { ChevronLeft, ChevronRight, Search, Bell } from "react-feather";
 import { Link } from "react-router-dom";
 import profileImage from "../../assets/zu.jpeg";
+import { Tooltip, IconButton } from "@mui/material";
 
 const HeaderScreen = () => {
   return (
@@ -11,9 +12,19 @@ const HeaderScreen = () => {
         <ChevronRight />
       </div>
 
+
       <div style={{}} className="rightHeader">
-        <Search />
-        <Bell style={{ marginLeft: 10 }} />
+      <Tooltip title="Search">
+          <IconButton>
+          <Search />
+          </IconButton>
+      </Tooltip>
+
+      <Tooltip title="Notifications">
+          <IconButton>
+          <Bell style={{ marginLeft: 5 }} />
+          </IconButton>
+      </Tooltip>
       </div>
 
       <div style={{ display: "flex", marginTop: 5, marginLeft: 50 }}>

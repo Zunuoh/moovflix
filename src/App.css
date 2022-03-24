@@ -43,7 +43,7 @@ body{
 }
 
 .rightHeader{
-  flex:1
+  flex:2
 }
 
 .profileImage{
@@ -66,6 +66,7 @@ body{
 }
 
 .cardContainer:hover{
+  transition: 15s;
   width: 19rem;
   height: 35rem;
 }
@@ -115,7 +116,7 @@ body{
 }
 
 .moreDetailsInformationContainer{
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .movieDetailsDescription{
@@ -191,10 +192,10 @@ body{
   padding: 20px;
 }
 
-/* .cardContainer:hover{
+.cardContainer:hover{
   width: 15rem;
   height: 32rem;
-} */
+}
 
 .cardImageContainer{
   width: 160px;

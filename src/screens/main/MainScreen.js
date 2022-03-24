@@ -5,6 +5,7 @@ import { Card, Spinner } from "react-bootstrap";
 import { Tooltip, IconButton, Rating } from "@mui/material";
 import axios from "axios";
 import { Link } from "react-router-dom";
+// import ApiModule from '../api/ApiModule'
 
 const MainScreen = (props) => {
   const [films, setFilms] = useState("");
@@ -19,6 +20,15 @@ const MainScreen = (props) => {
     setFilms(response.data);
     setLoading(true);
   };
+
+  // const showFilm = () =>{
+  //   ApiModule.getFilms()
+  //     .then(() => {
+  //       setFilms(response.data);
+  //       setLoading(true);
+  //     })
+  // }
+
   useEffect(() => {
     getFilms();
   }, []);
@@ -92,7 +102,7 @@ const MainScreen = (props) => {
                         className="tooltipContainer"
                       >
                         <Tooltip title="View more">
-                          <Link to={`/moredetails?id=${film.id}`}>
+                          <Link to={`/moredetails?id=${film.id}`} >
                             <IconButton>
                               <PlusCircle />
                             </IconButton>
@@ -105,7 +115,11 @@ const MainScreen = (props) => {
               })}
           </div>
         ) : (
-          <Spinner animation="grow" />
+       <div style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:"20%", color: "#098193"}}>
+          <Spinner animation="grow"/>
+          <Spinner animation="grow"/>
+          <Spinner animation="grow"/>
+       </div>
         )}
         <div></div>
       </div>
