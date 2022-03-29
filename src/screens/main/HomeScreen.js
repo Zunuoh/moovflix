@@ -7,10 +7,14 @@ const HomeScreen = () => {
   return (
     <div>
       <Row>
-        <Col sm={2} style={{ backgroundColor: "#098193" }}>
+        <Col
+          sm={2}
+          style={{ backgroundColor: "#098193" }}
+          className="sideScreen"
+        >
           <SideScreen />
         </Col>
-        <Col sm={10}>
+        <Col sm={10} className="mainScreen">
           <MainScreen />
         </Col>
       </Row>

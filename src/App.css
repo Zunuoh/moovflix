@@ -3,6 +3,14 @@ body{
   overflow-y: scroll;
 }
 
+.sideScreen{
+  overflow-y: hidden;
+}
+
+.mainScreen{
+  overflow-y: scroll;
+} 
+
 .sideScreenContainer{
   padding: 30px;
   /* background-color: #098193; */
@@ -66,7 +74,7 @@ body{
 }
 
 .cardContainer:hover{
-  transition: 15s;
+  /* transition: 1s; */
   width: 19rem;
   height: 35rem;
 }

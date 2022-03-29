@@ -12,19 +12,18 @@ const HeaderScreen = () => {
         <ChevronRight />
       </div>
 
-
       <div style={{}} className="rightHeader">
-      <Tooltip title="Search">
+        <Tooltip title="Search">
           <IconButton>
-          <Search />
+            <Search />
           </IconButton>
-      </Tooltip>
+        </Tooltip>
 
-      <Tooltip title="Notifications">
+        <Tooltip title="Notifications">
           <IconButton>
-          <Bell style={{ marginLeft: 5 }} />
+            <Bell style={{ marginLeft: 5 }} />
           </IconButton>
-      </Tooltip>
+        </Tooltip>
       </div>
 
       <div style={{ display: "flex", marginTop: 5, marginLeft: 50 }}>
