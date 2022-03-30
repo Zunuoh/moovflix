@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import HeaderScreen from "./HeaderScreen";
 import { PlusCircle } from "react-feather";
-import { Card, Spinner } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Tooltip, IconButton, Rating } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ApiModule } from "../api/ApiModule";
 import cartoon2 from '../../assets/cartoon2.png'
+import Loader from "./Loader";
 
 const MainScreen = () => {
   const [films, setFilms] = useState("");
@@ -38,8 +39,10 @@ const MainScreen = () => {
         >
           Recommended for you
         </div>
-        {!loading ? (
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {loading ? (
+         <Loader/>
+        ) : (
+         <div style={{ display: "flex", flexWrap: "wrap" }}>
             {films &&
               films.map((film) => {
                 return (
@@ -107,22 +110,7 @@ const MainScreen = () => {
                 );
               })}
           </div>
-        ) : (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: "20%",
-              color: "#098193",
-            }}
-          >
-            <Spinner animation="grow" />
-            <Spinner animation="grow" />
-            <Spinner animation="grow" />
-          </div>
         )}
-        <div></div>
       </div>
     </div>
   );
