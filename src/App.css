@@ -3,6 +3,14 @@ body{
   overflow-y: scroll;
 }
 
+.sideScreen{
+  overflow-y: hidden;
+}
+
+.mainScreen{
+  overflow-y: scroll;
+} 
+
 .sideScreenContainer{
   padding: 30px;
   /* background-color: #098193; */
@@ -66,7 +74,7 @@ body{
 }
 
 .cardContainer:hover{
-  transition: 15s;
+  /* transition: 1s; */
   width: 19rem;
   height: 35rem;
 }
@@ -128,6 +136,26 @@ body{
   max-width: 80ch;
   font-family: 'Montserrat', sans-serif;
 }
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  color: #098193;
+}
+
+.moreDetailsHeaders{
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.moreDetailsFont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 
 
 
